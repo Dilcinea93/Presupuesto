@@ -7,12 +7,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Enviar email con archivo adjunto</title>
 </head>
-
+   
 <body>
 <?php
 function comprobar_email($email) {
     return (filter_var($email, FILTER_VALIDATE_EMAIL)) ? 1 : 0;
-}
+} 
 
 if (isset($_POST['recibir'])) {
 
